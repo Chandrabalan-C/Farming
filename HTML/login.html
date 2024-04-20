@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Government Schemes for Farmers</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="./JS/style.css">
 </head>
 <body class="index">
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>Govt to Farmer Schemes</h1>
+            </div>
+            <ul class="navbar-nav">
+                <li><a href="./signup.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="left">
             <div id="loginFarmer" class="login-box">
@@ -29,12 +42,14 @@
                     <label for="govtPassword">Password:</label>
                     <input type="password" id="govtPassword" name="govtPassword" required>
                     <button type="submit">Login</button>
+                    <div id="error-message" class="error-message"></div>
                 </form>
             </div>
         </div>
     </div>
     <!-- <script src="web3.min.js"></script> -->
-    <script src="./JS/login.js"></script>
-    <!-- <script src="./JS/script.js"></script> -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script type="module" src="./JS/login.js"></script>
+    <!-- <script src="./script.js"></script> -->
 </body>
 </html>

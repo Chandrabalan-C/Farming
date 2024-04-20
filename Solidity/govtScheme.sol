@@ -43,4 +43,9 @@ contract GovernmentSchemes {
         require(_id < schemes.length, "Scheme ID out of range");
         return (schemes[_id].name, schemes[_id].description, schemes[_id].interestRate, schemes[_id].rebate, schemes[_id].expiryTimestamp);
     }
+
+    // Function to get the total count of schemes
+    function getSchemeCount() public view returns (uint256) {
+        return schemes.length;
+    }
 }

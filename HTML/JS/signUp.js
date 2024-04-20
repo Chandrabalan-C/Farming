@@ -16,7 +16,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
     addUser(newUser);
 
     // Redirect to login page
-    window.location.href = 'login.html';
+    window.location.href = './login.html';
 });
 
 function addUser(newUser) {
